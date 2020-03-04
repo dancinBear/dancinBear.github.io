@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="src/loader.js" type="module"></script>
+
+    <title>Dancin's Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Dancin Feldman</h1>
+                <br>
+                <h2 class="lead">Designer, Developer, Nerd</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <nav>
+                <div class="row">
+                    <div class="col-sm">
+                        <p id="home">Home</p>
+                    </div>
+                    <div class="col-sm">
+                        <p id="code">Code</p>
+                    </div>
+                    <div class="col-sm">
+                        <p id="art">Art</p>
+                    </div>
+                    <div class="col-sm">
+                        <p id="music">Music</p>
+                    </div>
+                    <div class="col-sm">
+                        <p id="writing">Writing</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id=pageContent><p>If you're seeing this, the JavaScript broke.</p></div>
+    <div class='container' id='contact'>
+        <h2>Contact Info</h2>
+        <p><iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:24ruB5NHLwPYyfBjc0z8ju&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe><a href="https://twitter.com/argentumangel?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow me on Twitter!</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
+        <p>Shoot me an email at dancinbf(@)gmail(.)com!</p>
+        <p class="link" data-toggle="modal" data-target="#resume">Check out my resume!</p>
+    </div>
+
+    <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="resumelabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resumelabel">My Resume</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="media/Dancin-Feldman.pdf" width="100%" height="700px"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="darazguide" tabindex="-1" role="dialog" aria-labelledby="guidelabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="guidelabel">Daraz's Guide to the World</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="media/darazguide.pdf#toolbar=0" width="100%" height="700px"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="song" tabindex="-1" role="dialog" aria-labelledby="songlabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="songlabel">The Statue's Song</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <pre>
+                            Oh sing to me ere all is lost,
+                            of memories the flesh still bears;
+                            recount to me how our paths cross’d,
+                            face to face, amid the moss.
+
+                            Hidden in the whisp’ring woods,
+                            this ember heart met icy cold.
+                            Oh! the chill that I withstood,
+                            skin to steam, it hurt so good.
+
+                            Now tempered to each other’s blood,
+                            our skins have formed to husks of stone.
+                            Forever frozen ‘twixt the buds;
+                            self to statue, mired in mud.
+
+                            The moss has risen, blocked the light;
+                            its roots dig deep below my skin,
+                            forming cracks I cannot fight;
+                            stone to dust, my love; goodnight.
+
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -30,9 +30,7 @@ const filterProjects = () => {
     for (let project of projects.all) {
         if (project.type.includes(page)) filtered.push(project);
     }
-    if (filtered.length == 0) {
-        window.history.replaceState(null, "", "?home");
-    }
+    if (filtered.length == 0) window.history.replaceState(null, "", "?home");
     displayPage(filtered);
 }
 
