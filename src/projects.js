@@ -9,6 +9,19 @@ const all = [
         link: {
             type: "none"
         }
+    }, 
+    {
+        name: "Rosie's Recipes",
+        media: {
+            type: "none"
+        },
+        type: "code, writing",
+        text: "This is a personal project that means a lot to me. My grandmother's cooking shaped my childhood and this website is an attempt to share that cooking. It's still a work in progress, but I built the entire site from scratch.",
+        link: {
+            type: "link",
+            href: "http://rosiesrecipes.net/",
+            text: "You can find it here!"
+        }
     },
     {
         name: "Daraz's Guide to the World",
@@ -159,8 +172,8 @@ const all = [
             type: "embed",
             embed: '<iframe width="100%" src="https://www.youtube.com/embed/v9U5glsArBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         },
-        type: "art",
-        text: "Becoming More is a brief stop-motion animation that I made in 2017. The film was put together in Dragonframe, Adobe After Effects, and Adobe Premiere; the soundtrack was composed in Ableton Live.",
+        type: "art, music",
+        text: "Becoming More is a brief stop-motion animation that I made in 2017. The film was put together in Dragonframe, Adobe After Effects, and Adobe Premiere, and I composed the soundtrack in Ableton Live.",
         link: {
             type: "none"
         }

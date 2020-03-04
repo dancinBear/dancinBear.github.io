@@ -7,7 +7,7 @@ const init = () => {
     pageContent = document.querySelector("#pageContent");
     for (let button of navButtons) {
         button.parentElement.onclick = (e) => {
-            window.history.replaceState(null, "", `./index.html?${e.target.id}`);
+            window.history.replaceState(null, "", `?${e.target.id}`);
             filterProjects();
         }
     }
@@ -18,15 +18,21 @@ const filterProjects = () => {
     let filtered = [];
     page = window.location.search.slice(1);
     if (page.includes("&")) page = page.slice(0, page.indexOf("&"));
-    if (page == "") window.history.replaceState(null, "", `./index.html?home`);
+    if (page == "") {
+        window.history.replaceState(null, "", `?home`);
+        homePage();
+        return;
+    }
     if (page == "home") {
         homePage();
         return;
     }
     for (let project of projects.all) {
-        if (project.type == page) filtered.push(project);
+        if (project.type.includes(page)) filtered.push(project);
     }
-    console.log(filtered);
+    if (filtered.length == 0) {
+        window.history.replaceState(null, "", "?home");
+    }
     displayPage(filtered);
 }
 
@@ -71,7 +77,7 @@ const displayPage = (list) => {
 }
 
 const homePage = () => {
-    pageContent.innerHTML = "<div class='container'><div class='row'><div class='col'><h2>About Me</h2></div></div><div class='row'><div class='col-sm'><p>Hi, I'm Dancin and I make things, from code to art and beyond! I hail from Ithaca, New York and have been making things since I was a small child. I've got no intention of stopping my creative rampage, so the contents of this portfolio page are just a taste of what's to come!</p></div></div><div class='row'><div class='col'><h2>Top Projects</h2></div></div><div class='row'><div class='col-sm'><h3>Daraz's Guide to the World</h3><p>A Dungeons and Dragons 5th edition sourcebook that I've been working on for well over a year now. Currently, it consists of three playable races, a complete playable class, and a subclass for 5e's sorcerer.</p><p class='link' id='toWriting'>Find it and more here!</p></div><div class='col-sm'><h3>EGG</h3><p>My latest musical release under the name Dancin Bear. It's got 6 tracks in a wide variety of genres and styles, some with lyrics and some without.</p><p class='link' id='toMusic'>Find it and more here!</p></div><div class='col-sm'><h3>Self</h3><p>A collection of manipulated photos that ask the questions: What is a person? Who am I? Who are you?</p><p class='link' id='toArt'>Find it and more here!</p></div></div></div>";
+    pageContent.innerHTML = "<div class='container'><div class='row'><div class='col'><h2>About Me</h2></div></div><div class='row'><div class='col-sm'><p>Hi, I'm Dancin and I make things, from code to art and beyond! I hail from Ithaca, New York and have been making things since I was a small child. I've got no intention of stopping my creative rampage, so the contents of this portfolio page are just a taste of what's to come!</p></div></div><div class='row'><div class='col'><h2>My Personal Favorites</h2></div></div><div class='row'><div class='col-sm'><h3>Daraz's Guide to the World</h3><p>A Dungeons and Dragons 5th edition sourcebook that I've been working on for well over a year now. Currently, it consists of three playable races, a complete playable class, and a subclass for 5e's sorcerer.</p><p class='link' id='toWriting'>Find it and more here!</p></div><div class='col-sm'><h3>EGG</h3><p>My latest musical release under the name Dancin Bear. It's got 6 tracks in a wide variety of genres and styles, some with lyrics and some without.</p><p class='link' id='toMusic'>Find it and more here!</p></div><div class='col-sm'><h3>Self</h3><p>A collection of manipulated photos that ask the questions: What is a person? Who am I? Who are you?</p><p class='link' id='toArt'>Find it and more here!</p></div></div></div>";
     document.querySelector("#toWriting").onclick = () => {
         document.querySelector("#writing").click();
     }
