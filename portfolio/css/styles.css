@@ -1,0 +1,66 @@
+nav .col-sm {
+    text-decoration: underline;
+    background-color: slategray;
+    text-align: center;
+    font-size: 125%;
+    border: 1px solid black;
+}
+
+nav .col-sm p {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+nav .col-sm:hover {
+    background-color: lightgray;
+}
+nav .col-sm:active {
+    background-color: darkgray;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.link, a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.link:hover, a:hover {
+    color: darkred;
+}
+
+.link:active, a:active {
+    color: purple;
+}
+
+#contact {
+    border: 1px solid black;
+    width: 490px;
+    text-align: center;
+}
+pre {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #D8ABCE;
+}
+
+#contact {
+    background-color: lavender;
+    display: block;
+}
+
+.jumbotron {
+    background-color: lavender;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact {
+        width: 100%;
+    }
+}
