@@ -5,7 +5,7 @@ const all = [
             type: "none"
         },
         type: "code",
-        text: "I wrote this portfolio page myself! The page itself is written in HTML and is operated by JavaScript, with styling in CSS. I utilized Bootstrap for some simple components and to make the styling a bit easier for myself, but the rest of the page is entirely from scratch! </p><p> I recently rewrote most of the page's JavaScript, so now all of the projects are stored in an array of objects that I can filter and display as necessary. Originally, I had them hardcoded in; now, I can easily add new projects without needing to worry about screwing up my JavaScript!",
+        text: "I wrote this portfolio page myself! The page itself is written in HTML and is operated by JavaScript, with styling in CSS. I utilized Bootstrap for some simple components and to make the styling a bit easier for myself, but the rest of the page is entirely from scratch! </p><p> I recently rewrote most of the page's JavaScript, so now all of the projects are stored in an array of objects that I can filter and display as necessary. Originally, I had them hardcoded in; now, I can easily add new projects without needing to worry about screwing up my code!",
         link: {
             type: "none"
         }
