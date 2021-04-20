@@ -48,17 +48,17 @@ const all = [
         }
     },
     {
-        name: "EGG",
+        name: "Saris Act I",
         media: {
             type: "embed",
-            embed: '<iframe src="https://open.spotify.com/embed/album/2gopDvY2eJkTK2fUpPixUz" width="100%" height="45%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'
+            embed: '<iframe style="border: 0; width: 100%; height: 45%;" src="https://bandcamp.com/EmbeddedPlayer/album=2912282076/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://dancinbear.bandcamp.com/album/prologue-moros-rest">Prologue: Moro&#39;s Rest by Dancin Bear</a></iframe>'
         },
         type: "music",
-        text: "EGG is my latest album release, spanning several genres and showcasing my full range of musical capability. All of the music was written and composed in Ableton Live.",
+        text: "Saris Act I is a soundtrack for an RPG that doesn't and likely never will exist. It aims to tell a story through music, utilizing recurring themes and motifs to represent characters and events. I plan to release it in parts, as it is a very large project.",
         link: {
             type: "link",
-            href: "https://open.spotify.com/artist/24ruB5NHLwPYyfBjc0z8ju?si=JJThF1NlR16cWGNbh8DsGg",
-            text: "Find the rest of my officially released music here!"
+            href: "https://dancinbear.bandcamp.com/",
+            text: "Check out more of my music on my Bandcamp here!"
         }
     },
     {
