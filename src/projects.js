@@ -10,6 +10,19 @@ const all = [
             type: "none"
         }
     }, 
+	{
+		name: "Changeling",
+		media: {
+			type: "none"
+		},
+		type: "music",
+		text: "Since January of 2021, I've been working on the soundtrack for Changeling, a VR narrative mystery developed by Xana Adhoc. The player takes on the mantle of Aurelia, a dream-walker who can see through the eyes of anyone she touches, and must help a family find out what's wrong with their child.",
+		link: {
+			type: "link",
+			href: "https://www.changelingvr.com/",
+			text: "More info here!"
+		}
+	},
     {
         name: "Rosie's Recipes",
         media: {
