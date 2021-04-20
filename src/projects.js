@@ -51,7 +51,7 @@ const all = [
         name: "Saris Act I",
         media: {
             type: "embed",
-            embed: '<iframe style="border: 0; width: 100%; height: 45%;" src="https://bandcamp.com/EmbeddedPlayer/album=2912282076/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://dancinbear.bandcamp.com/album/prologue-moros-rest">Prologue: Moro&#39;s Rest by Dancin Bear</a></iframe>'
+            embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2912282076/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://dancinbear.bandcamp.com/album/prologue-moros-rest">Prologue: Moro&#39;s Rest by Dancin Bear</a></iframe>'
         },
         type: "music",
         text: "Saris Act I is a soundtrack for an RPG that doesn't and likely never will exist. It aims to tell a story through music, utilizing recurring themes and motifs to represent characters and events. I plan to release it in parts, as it is a very large project.",
